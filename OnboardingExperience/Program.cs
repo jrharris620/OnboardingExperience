@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Speech.Synthesis;
-using System.Text.RegularExpressions;
 
 namespace OnboardingExperience
 {
@@ -67,7 +66,7 @@ namespace OnboardingExperience
         /// The purpose of this message is to ask a bool question with a yes or no option
         /// </summary>
         /// <param name="question">Question to be asked</param>
-        /// <returns>True for yes, or False for no</returns>
+        /// <returns></returns>
         static bool AskBoolQuestion(string question)
         {
             var IsAccountOwner = false;
@@ -107,12 +106,7 @@ namespace OnboardingExperience
 
             return (AccountType) aType;
         }
-
-        string aType = ("'Checking,' 'Savings,' or 'Business");
-
-        public string AType1 { get => aType; set => aType = value; }
-
-
+       
         /// <summary>
         /// The purpose of this method is to ask an int question
         /// </summary>
